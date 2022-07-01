@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大数据疫情可视化</title>
+    <link rel="icon" href="images/科技1.png" sizes="32x32">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>Echarts疫情可视化</h1>
+        <div class="showTime"></div>
+    </header>
+    <!-- 主体 -->
+    <section class="mainbox">
+        <!-- 第一个盒子 -->
+        <div class="column">
+            <div class="panel bar">
+                <h2>新增确诊国家Top10</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel line">
+                <h2>境外输入感染人数</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel pie">
+                <h2>感染省份Top10</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <!-- 第二个盒子 -->
+        <div class="column">
+            <div class="no">
+                <div class="no-hd">
+                    <ul>
+                        <li>46794</li>
+                        <li>865922</li>
+                        <li>15425</li>
+                        <li>279577</li>
+                    </ul>
+                </div>
+                <div class="no-bd">
+                    <ul>
+                        <li>新增确诊</li>
+                        <li>累计确诊</li>
+                        <li>累计死亡</li>
+                        <li>累计治愈</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map">
+                <div class="map1"></div>
+                <div class="map2"></div>
+                <div class="map3"></div>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <!-- 第三个盒子 -->
+        <div class="column">
+            <div class="panel bar2">
+                <h2>各国疫情治愈率</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel line2">
+                <h2>国内疫情趋势</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel pie2">
+                <h2>世界疫情图</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/flexible.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/showTime.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
