@@ -238,7 +238,7 @@
 // 左线型图（境外输入感染人数）
 (function () {
     var myChart = echarts.init(document.querySelector(".line .chart"));
-    $.get('data/test.json').done(function (data) {
+    $.get('data/inputData.json').done(function (data) {
         // 填入数据
         myChart.setOption({
             xAxis: {
@@ -248,12 +248,12 @@
                 {
                     // 根据名字对应到相应的系列
                     name: "境外输入感染总人数",
-                    data: data.Temp
+                    data: data.confirm
                 },
                 {
                     // 根据名字对应到相应的系列
                     name: "境外日增",
-                    data: data.Temp
+                    data: data.today
                 }
             ]
         });
